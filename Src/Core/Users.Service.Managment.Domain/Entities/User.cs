@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using Users.Service.Managment.Domain.Common;
+
+namespace Users.Service.Managment.Domain.Entities
+{
+    public class User : Entity<Guid>
+    {
+        public User()
+        {
+            SubUsers = new HashSet<User>();
+            UserPointsRedeemPlans = new HashSet<UserPointsRedeemPlan>();
+            UserMarkupPlans = new HashSet<UserMarkupPlan>();
+            UserCreditCards = new HashSet<UserCreditCard>(); 
+        }
+
+        public string UserName { get; set; }
+        public string PasswordHash { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public bool EmailConfirmed { get; set; }
+        public string PhoneNumber { get; set; }
+        public bool PhoneNumberConfirmed { get; set; }
+        public string CountryIsoCode { get; set; }
+        public string Image { get; set; }
+        public DateTime CreationDate { get; set; }
+        public Guid? ParentUserId { get; set; } 
+        public bool IsActive { get; set; }
+        public string ExternalLoginId { get; set; }
+        public string SecurityStamp{ get; set; }
+        public bool LockoutEnabled { get; set; }
+        public DateTime? LockoutEndDateUtc { get; set; }
+        public int AccessFailedCount { get; set; }
+        public bool CanUseCoupon { get; set; } = true;
+        public decimal DisplayMarkup { get; set; } = new decimal();
+
+        public User ParentUser { get; set; }
+        public virtual ICollection<User> SubUsers { get; set; }
+        public virtual ICollection<UserPointsRedeemPlan> UserPointsRedeemPlans { get; set; }
+        public virtual ICollection<UserMarkupPlan> UserMarkupPlans { get; set; }
+        public virtual ICollection<UserCreditCard> UserCreditCards { get; set; }
+    }
+}

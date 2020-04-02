@@ -1,0 +1,1207 @@
+﻿{
+  "x-generator": "NSwag v13.1.3.0 (NJsonSchema v10.0.27.0 (Newtonsoft.Json v12.0.0.0))",
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Booking Service API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/MarkupPlans/Create": {
+      "post": {
+        "tags": [
+          "MarkupPlans"
+        ],
+        "operationId": "MarkupPlans_Create",
+        "requestBody": {
+          "x-name": "command",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMarkupPlanCommand"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MarkupPlans/Update": {
+      "post": {
+        "tags": [
+          "MarkupPlans"
+        ],
+        "operationId": "MarkupPlans_Update",
+        "requestBody": {
+          "x-name": "command",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateMarkupPlanCommand"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MarkupPlans/Delete": {
+      "delete": {
+        "tags": [
+          "MarkupPlans"
+        ],
+        "operationId": "MarkupPlans_Delete",
+        "requestBody": {
+          "x-name": "command",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteMarkupPlanCommand"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PointsRedeemPlans/Create": {
+      "post": {
+        "tags": [
+          "PointsRedeemPlans"
+        ],
+        "operationId": "PointsRedeemPlans_Create",
+        "requestBody": {
+          "x-name": "command",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePointsRedeemPlanCommand"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PointsRedeemPlans/Update": {
+      "post": {
+        "tags": [
+          "PointsRedeemPlans"
+        ],
+        "operationId": "PointsRedeemPlans_Update",
+        "requestBody": {
+          "x-name": "command",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePointsRedeemPlanCommand"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PointsRedeemPlans/Delete": {
+      "delete": {
+        "tags": [
+          "PointsRedeemPlans"
+        ],
+        "operationId": "PointsRedeemPlans_Delete",
+        "requestBody": {
+          "x-name": "command",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeletePointsRedeemPlanCommand"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Users/Create": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "operationId": "Users_Create",
+        "requestBody": {
+          "x-name": "command",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateUserCommand"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Users/Update": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "operationId": "Users_Update",
+        "requestBody": {
+          "x-name": "command",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateUserCommand"
+              }
+            }
+          },
+          "required": true,
+          "x-position": 1
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Users/Delete/{id}": {
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "operationId": "Users_Delete",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "guid"
+            },
+            "x-position": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateMarkupPlanCommand": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/RequestDetails"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "nullable": true
+              },
+              "markup": {
+                "type": "number",
+                "format": "decimal"
+              },
+              "applyPoint": {
+                "type": "boolean"
+              },
+              "canUseCoupon": {
+                "type": "boolean"
+              },
+              "userMarkupPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserMarkupPlan"
+                }
+              },
+              "defaultMarkupPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/DefaultMarkupPlan"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "UserMarkupPlan": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/EntityOfLong"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "userId": {
+                "type": "string",
+                "format": "guid"
+              },
+              "markupPlanId": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "module": {
+                "$ref": "#/components/schemas/ModuleTypes"
+              },
+              "user": {
+                "nullable": true,
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ]
+              },
+              "markupPlan": {
+                "nullable": true,
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/MarkupPlan"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "ModuleTypes": {
+        "type": "integer",
+        "description": "",
+        "x-enumNames": [
+          "Hotels",
+          "Flights",
+          "Transportations"
+        ],
+        "enum": [
+          1,
+          2,
+          3
+        ]
+      },
+      "User": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/EntityOfGuid"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "userName": {
+                "type": "string",
+                "nullable": true
+              },
+              "passwordHash": {
+                "type": "string",
+                "nullable": true
+              },
+              "firstName": {
+                "type": "string",
+                "nullable": true
+              },
+              "lastName": {
+                "type": "string",
+                "nullable": true
+              },
+              "email": {
+                "type": "string",
+                "nullable": true
+              },
+              "emailConfirmed": {
+                "type": "boolean"
+              },
+              "phoneNumber": {
+                "type": "string",
+                "nullable": true
+              },
+              "phoneNumberConfirmed": {
+                "type": "boolean"
+              },
+              "countryIsoCode": {
+                "type": "string",
+                "nullable": true
+              },
+              "image": {
+                "type": "string",
+                "nullable": true
+              },
+              "creationDate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "parentUserId": {
+                "type": "string",
+                "format": "guid",
+                "nullable": true
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "externalLoginId": {
+                "type": "string",
+                "nullable": true
+              },
+              "securityStamp": {
+                "type": "string",
+                "nullable": true
+              },
+              "lockoutEnabled": {
+                "type": "boolean"
+              },
+              "lockoutEndDateUtc": {
+                "type": "string",
+                "format": "date-time",
+                "nullable": true
+              },
+              "accessFailedCount": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "canUseCoupon": {
+                "type": "boolean"
+              },
+              "displayMarkup": {
+                "type": "number",
+                "format": "decimal"
+              },
+              "parentUser": {
+                "nullable": true,
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ]
+              },
+              "subUsers": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "userPointsRedeemPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserPointsRedeemPlan"
+                }
+              },
+              "userMarkupPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserMarkupPlan"
+                }
+              },
+              "userCreditCards": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserCreditCard"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "UserPointsRedeemPlan": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/EntityOfLong"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "userId": {
+                "type": "string",
+                "format": "guid"
+              },
+              "pointsRedeemPlanId": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "module": {
+                "$ref": "#/components/schemas/ModuleTypes"
+              },
+              "user": {
+                "nullable": true,
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ]
+              },
+              "pointsRedeemPlan": {
+                "nullable": true,
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/PointsRedeemPlan"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "PointsRedeemPlan": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Entity"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "points": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "balance": {
+                "type": "number",
+                "format": "decimal"
+              },
+              "planDate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "userPointsRedeemPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserPointsRedeemPlan"
+                }
+              },
+              "defaultPointsRedeemPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/DefaultPointsRedeemPlan"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "DefaultPointsRedeemPlan": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Entity"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "pointsRedeemPlanId": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "module": {
+                "$ref": "#/components/schemas/ModuleTypes"
+              },
+              "pointsRedeemPlan": {
+                "nullable": true,
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/PointsRedeemPlan"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "Entity": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/EntityOfInteger"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false
+          }
+        ]
+      },
+      "EntityOfInteger": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "EntityOfLong": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "UserCreditCard": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/EntityOfLong"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "userId": {
+                "type": "string",
+                "format": "guid"
+              },
+              "cardNumber": {
+                "type": "string",
+                "nullable": true
+              },
+              "cardDisplayNumber": {
+                "type": "string",
+                "nullable": true
+              },
+              "cardHolderName": {
+                "type": "string",
+                "nullable": true
+              },
+              "expiryDate": {
+                "type": "string",
+                "nullable": true
+              },
+              "user": {
+                "nullable": true,
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "EntityOfGuid": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "guid"
+          }
+        }
+      },
+      "MarkupPlan": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Entity"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string",
+                "nullable": true
+              },
+              "markup": {
+                "type": "number",
+                "format": "decimal"
+              },
+              "applyPoint": {
+                "type": "boolean"
+              },
+              "canUseCoupon": {
+                "type": "boolean"
+              },
+              "userMarkupPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserMarkupPlan"
+                }
+              },
+              "defaultMarkupPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/DefaultMarkupPlan"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "DefaultMarkupPlan": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Entity"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "markupPlanId": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "module": {
+                "$ref": "#/components/schemas/ModuleTypes"
+              },
+              "markupPlan": {
+                "nullable": true,
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/MarkupPlan"
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "RequestDetails": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "clientReference": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "UpdateMarkupPlanCommand": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/RequestDetails"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "name": {
+                "type": "string",
+                "nullable": true
+              },
+              "markup": {
+                "type": "number",
+                "format": "decimal"
+              },
+              "applyPoint": {
+                "type": "boolean"
+              },
+              "canUseCoupon": {
+                "type": "boolean"
+              },
+              "userMarkupPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserMarkupPlan"
+                }
+              },
+              "defaultMarkupPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/DefaultMarkupPlan"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "DeleteMarkupPlanCommand": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "CreatePointsRedeemPlanCommand": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/RequestDetails"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "points": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "balance": {
+                "type": "number",
+                "format": "decimal"
+              },
+              "planDate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "userPointsRedeemPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserPointsRedeemPlan"
+                }
+              },
+              "defaultPointsRedeemPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/DefaultPointsRedeemPlan"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "UpdatePointsRedeemPlanCommand": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/RequestDetails"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "points": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "balance": {
+                "type": "number",
+                "format": "decimal"
+              },
+              "planDate": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "userPointsRedeemPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserPointsRedeemPlan"
+                }
+              },
+              "defaultPointsRedeemPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/DefaultPointsRedeemPlan"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "DeletePointsRedeemPlanCommand": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "CreateUserCommand": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/RequestDetails"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "format": "guid",
+                "nullable": true
+              },
+              "userName": {
+                "type": "string",
+                "nullable": true
+              },
+              "password": {
+                "type": "string",
+                "nullable": true
+              },
+              "passwordHash": {
+                "type": "string",
+                "nullable": true
+              },
+              "firstName": {
+                "type": "string",
+                "nullable": true
+              },
+              "lastName": {
+                "type": "string",
+                "nullable": true
+              },
+              "email": {
+                "type": "string",
+                "nullable": true
+              },
+              "emailConfirmed": {
+                "type": "boolean"
+              },
+              "phoneNumber": {
+                "type": "string",
+                "nullable": true
+              },
+              "phoneNumberConfirmed": {
+                "type": "boolean"
+              },
+              "countryIsoCode": {
+                "type": "string",
+                "nullable": true
+              },
+              "image": {
+                "type": "string",
+                "nullable": true
+              },
+              "parentUserId": {
+                "type": "string",
+                "format": "guid"
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "externalLoginId": {
+                "type": "string",
+                "nullable": true
+              },
+              "securityStamp": {
+                "type": "string",
+                "nullable": true
+              },
+              "lockoutEnabled": {
+                "type": "boolean"
+              },
+              "lockoutEndDateUtc": {
+                "type": "string",
+                "format": "date-time",
+                "nullable": true
+              },
+              "accessFailedCount": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "canUseCoupon": {
+                "type": "boolean"
+              },
+              "displayMarkup": {
+                "type": "number",
+                "format": "decimal"
+              },
+              "parentUser": {
+                "nullable": true,
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ]
+              },
+              "subUsers": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "userPointsRedeemPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserPointsRedeemPlan"
+                }
+              },
+              "userMarkupPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserMarkupPlan"
+                }
+              },
+              "userCreditCards": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserCreditCard"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "UpdateUserCommand": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/RequestDetails"
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "format": "guid",
+                "nullable": true
+              },
+              "userName": {
+                "type": "string",
+                "nullable": true
+              },
+              "password": {
+                "type": "string",
+                "nullable": true
+              },
+              "passwordHash": {
+                "type": "string",
+                "nullable": true
+              },
+              "firstName": {
+                "type": "string",
+                "nullable": true
+              },
+              "lastName": {
+                "type": "string",
+                "nullable": true
+              },
+              "email": {
+                "type": "string",
+                "nullable": true
+              },
+              "emailConfirmed": {
+                "type": "boolean"
+              },
+              "phoneNumber": {
+                "type": "string",
+                "nullable": true
+              },
+              "phoneNumberConfirmed": {
+                "type": "boolean"
+              },
+              "countryIsoCode": {
+                "type": "string",
+                "nullable": true
+              },
+              "image": {
+                "type": "string",
+                "nullable": true
+              },
+              "parentUserId": {
+                "type": "string",
+                "format": "guid"
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "externalLoginId": {
+                "type": "string",
+                "nullable": true
+              },
+              "securityStamp": {
+                "type": "string",
+                "nullable": true
+              },
+              "lockoutEnabled": {
+                "type": "boolean"
+              },
+              "lockoutEndDateUtc": {
+                "type": "string",
+                "format": "date-time",
+                "nullable": true
+              },
+              "accessFailedCount": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "canUseCoupon": {
+                "type": "boolean"
+              },
+              "displayMarkup": {
+                "type": "number",
+                "format": "decimal"
+              },
+              "parentUser": {
+                "nullable": true,
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/User"
+                  }
+                ]
+              },
+              "subUsers": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "userPointsRedeemPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserPointsRedeemPlan"
+                }
+              },
+              "userMarkupPlans": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserMarkupPlan"
+                }
+              },
+              "userCreditCards": {
+                "type": "array",
+                "nullable": true,
+                "items": {
+                  "$ref": "#/components/schemas/UserCreditCard"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

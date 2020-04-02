@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LeGate.BaseClasses.Configurations.Manager" Version="1.0.0" />
+    <PackageReference Include="NEST" Version="7.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Users.Service.Managment.Application\Users.Service.Managment.Application.csproj" />
+  </ItemGroup>
+
+</Project>

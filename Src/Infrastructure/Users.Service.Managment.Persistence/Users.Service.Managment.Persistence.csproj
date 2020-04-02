@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DesignTimeDbContextFactoryBase.cs" />
+    <Compile Remove="Migrations\20191105105711_CreateUserDb.cs" />
+    <Compile Remove="Migrations\20191105105711_CreateUserDb.Designer.cs" />
+    <Compile Remove="Migrations\20191105145654_updateUser.cs" />
+    <Compile Remove="Migrations\20191105145654_updateUser.Designer.cs" />
+    <Compile Remove="UserDbContextFactory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.0" />
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Users.Service.Managment.Application\Users.Service.Managment.Application.csproj" />
+    <ProjectReference Include="..\..\Core\Users.Service.Managment.Domain\Users.Service.Managment.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
